@@ -1,0 +1,51 @@
+<div class="row container m-3">
+    <h4 class="text-color">FAVOURITE VOICES</h4>
+    <div class="line"></div>
+</div>
+
+<div class="row ml-2">
+    <div class="col-md-2 col-sm-4  text-center balls" *ngFor="let f of favourites" (click)="deleteFavourites(f)">
+
+        <img [src]="'assets/'+f.icon" [alt]="f.name" class="img-fluid circle">
+        <div class="fav-circle">
+            <img src="assets/voice-favourite-off.svg" [alt]="f.name" class="img-fluid">
+        </div>
+
+        <p class="text-color">
+            {{f.name}}
+        </p>
+
+    </div>
+</div>
+
+
+
+<div class="row container m-3">
+    <h4 class="text-color">PRO VOICES</h4>
+    <div class="line pro"></div>
+</div>
+
+<div class="row ml-2">
+    <div class="col-md-2 col-sm-4  text-center balls" *ngFor="let v of voice" >
+        <!-- if the element is not activated -->
+        <div *ngIf="!v.active" (click)="addFavourites(v)">
+            <img [src]="'assets/'+v.icon" [alt]="v.name" class="img-fluid circle">
+            <div class="fav-circle">
+                <img src="assets/voice-favourite-off.svg" [alt]="v.name" class="img-fluid svg">
+            </div>
+        </div>
+
+<!-- if the element is activated -->
+        <div *ngIf="v.active">
+                <img [src]="'assets/'+v.icon" [alt]="v.name" class="img-fluid circle circle2">
+                <div class="fav-circle fav-circle-visible" (click)="deleteFavourites(v)">
+                    <img src="assets/voice-favourite.svg" [alt]="v.name" class="img-fluid svg">
+                </div>
+            </div>
+
+        <p class="text-color">
+            {{v.name}}
+        </p>
+
+    </div>
+</div>

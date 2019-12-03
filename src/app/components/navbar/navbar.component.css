@@ -1,0 +1,118 @@
+.navbar-dark,
+.bg-dark {
+  background-color: #1b1b1b !important;
+}
+
+.input-group{
+  width: 200px;
+}
+
+.form-control:focus {
+  border-color: none;
+  box-shadow: none;
+  color: #fff;
+}
+
+.brand{
+  color: #ccc;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5em;
+}
+
+.search {
+  background-color: #000000;
+  max-width: 245px;
+  min-width: 245px;
+  border-radius: 20px;
+  border: 0px;
+  color: #ccc;
+  height: 32px;
+  margin-bottom: 15px;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+  padding-bottom: 5px;
+}
+
+.has-search {
+  margin: 0 12vw 0 12vw;
+}
+
+.select,
+.filter {
+  background-color: #000000;
+  max-width: 245px;
+  border: 0px;
+  color: #ccc;
+  max-width: 100px;
+}
+
+.input-group.mb-3.filter-container {
+  margin-left: 16vh;
+}
+
+
+select:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+option {
+  background-color: #1b1b1b !important;
+  border: 0px;
+}
+
+select {
+  width: 100%;
+  min-width: 130px;
+  height: 32px;
+  padding-top: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../../../assets/select-arrow.svg") !important ;
+  background-size: 10%;
+  margin-left: 10px;
+}
+
+
+button.navbar-toggler {
+  right: 125px;
+  position: initial;
+  top: 5px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  .input-group.mb-3.filter-container {
+    margin-left: 0vh;
+  }
+  div#navbarSupportedContent {
+    position: relative;
+    margin-top: 10px;
+  }
+  .has-search {
+    margin: 0 12vw 0 12vw;
+  }
+}
+
+@media (min-width: 990px) {
+  .brand {
+    display: none;
+  }
+
+}
+

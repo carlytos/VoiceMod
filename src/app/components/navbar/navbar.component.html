@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand brand" href="#">VoiceMod</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="form-group has-search">
+            <img class="fa fa-search form-control-feedback" src="assets/search.svg">
+            <input type="text" class="form-control search" (keyup.enter)="searchJosn(buscarTexto.value)" #buscarTexto placeholder="Type something">
+        </div>
+
+        <div class="input-group mb-3 filter-container">
+            <div class="input-group-prepend">
+                <img src="assets/filter.svg" class="img">
+            </div>
+            <select class="custom-select select decorated" id="inputGroupSelect03">
+                  <option selected>All</option>
+                  <option [value]="v" class="option" *ngFor="let v of voiceClear" >{{v}}</option>
+                </select>
+        </div>
+
+        <div class="input-group mb-3 select-container">
+            <div class="input-group-prepend">
+                <img src="assets/order.svg">
+            </div>
+            <select class="custom-select select" id="inputGroupSelect03">
+                  <option value="asc">ascendente</option>
+                  <option value="desc">descendente</option>
+                </select>
+        </div>
+        <img class="fa fa-search form-control-feedback mb-2 mr-4 random" src="assets/button-random.svg" (click)="randomJson()">
+
+    </div>
+</nav>

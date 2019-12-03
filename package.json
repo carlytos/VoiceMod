@@ -19,6 +19,10 @@
     "@angular/platform-browser": "~8.2.11",
     "@angular/platform-browser-dynamic": "~8.2.11",
     "@angular/router": "~8.2.11",
+    "async": "^3.1.0",
+    "lodash": "^4.17.15",
+    "ng2-pipes": "^2.0.1",
+    "ngx-pipes": "^2.6.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

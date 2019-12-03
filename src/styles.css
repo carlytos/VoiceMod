@@ -1,1 +1,89 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: #1b1b1b;
+  overflow-x: hidden;
+}
+
+.text-color {
+  color: #ccc;
+  font-family: "Dosis", sans-serif;
+}
+
+.circle {
+  background-color: #cccccc;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.circle2 {
+    background-color: #fff;
+    width: 120px;
+    border-radius: 50%;
+  }
+
+.circle:hover {
+  background-color: #fff;
+}
+
+.circle:hover ~ .fav-circle {
+  visibility: visible;
+}
+
+.circle::selection {
+  visibility: visible;
+  background-color: #1abac9;
+}
+
+.fav-circle {
+  position: relative;
+  top: -120px;
+  left: 100px;
+  background-color: #fff;
+  z-index: 2;
+  width: 25px;
+  border-radius: 50%;
+  visibility: hidden;
+}
+
+.fav-circle-visible {
+    position: relative;
+    top: -120px;
+    left: 100px;
+    background-color: #fff;
+    z-index: 2;
+    width: 25px;
+    border-radius: 50%;
+    visibility: visible!important;
+  }
+
+
+
+.line {
+  height: 0.5px;
+  width: 80%;
+  background-color: #eee;
+  opacity: 0.1;
+  margin-top: 13px;
+  margin-left: 30px;
+  margin: 13px 20px 0 20px;
+}
+
+@media (max-width: 1200px) {
+  .line {
+    width: 70%;
+  }
+}
+
+@media (max-width: 990px) {
+  .line {
+    width: 0%;
+  }
+
+  .balls {
+    max-width: 135px;
+  }
+  .random {
+    float: left;
+  }
+}
