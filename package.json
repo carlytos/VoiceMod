@@ -19,7 +19,7 @@
     "@angular/platform-browser": "~8.2.11",
     "@angular/platform-browser-dynamic": "~8.2.11",
     "@angular/router": "~8.2.11",
-    "async": "^3.1.0",
+    "async": "^3.2.2",
     "lodash": "^4.17.15",
     "ng2-pipes": "^2.0.1",
     "ngx-pipes": "^2.6.0",
